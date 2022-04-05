@@ -9,7 +9,3 @@ This project [Live link](https://ns-food-reviews.netlify.app/).
 >Reviews Section
 >About Section
 ```
-Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
