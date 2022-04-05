@@ -2,18 +2,19 @@ import React from "react";
 
 const LandingPage = () => {
   return (
-    <div className="md:flex justify-center items-center bg-slate-900">
-      <div className="details-container text-white md:w-[50%]">
-        <h1 className=" text-4xl font-bold"> Avocado-and-Egg-Toast</h1>
-        <p>
+    <div className=" md:flex justify-center items-center bg-slate-900">
+      <div className=" p-5 text-white order-2 md:order-1 md:w-[50%]">
+        <h1 className=" text-4xl font-bold mb-2 md:mb-6">
           {" "}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab
-          odio vel at, unde aut nihil voluptatem reiciendis quia asperiores hic
-          non, atque eaque quaerat quas quam! Reprehenderit, quam quaerat?
+          Avocado-and-Egg-Toast
+        </h1>
+        <p className="text-lg">
+        The combination of fiber, protein, and healthy fats is filling, satisfying, and provides lots of nutrition to start your day. Avocados are a great source of potassium, fiber, heart-healthy monounsaturated fat, and folate, while eggs provide protein and micronutrients like choline, B vitamins, and vitamin D.
         </p>
+        <button className=" bg-slate-500 p-2 mt-4 rounded hover:bg-sky-400">Live Demo</button>
       </div>
-      <div className="md:w-[50%]">
-        <img src="https://i.ibb.co/0Qd2DmS/Avocado-and-Egg-Toast.jpg" alt="" />
+      <div className="order-1">
+        <img className=" rounded-[50px] p-9" src="https://i.ibb.co/0Qd2DmS/Avocado-and-Egg-Toast.jpg" alt="" />
       </div>
     </div>
   );
