@@ -50,7 +50,7 @@ const Header = () => {
               ? " text-teal-500 font-bold mr-5"
               : "mr-5 text-blue-900 font-semibold"
           }
-          to={"/about"}
+          to={"/blogs"}
         >
           About
         </NavLink>
