@@ -11,11 +11,12 @@ const Home = () => {
       <div className="landing-page">
         <LandingPage></LandingPage>
       </div>
+      {/* Reviews Section */}
       <section className="reviews Section">
         <h1 className=" text-center text-4xl font-bold my-5">
           Reviews Section
         </h1>
-        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 w-full">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 w-full">
           {reviews.slice(0, 3).map((review) => (
             <ReviewsSection key={review.id} review={review}></ReviewsSection>
           ))}
