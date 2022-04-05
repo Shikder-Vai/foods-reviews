@@ -52,7 +52,7 @@ const Header = () => {
           }
           to={"/blogs"}
         >
-          About
+          Blogs
         </NavLink>
       </div>
     </nav>
