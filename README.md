@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Food Reviews Website
 
 This project [Live link](https://ns-food-reviews.netlify.app/).
 
