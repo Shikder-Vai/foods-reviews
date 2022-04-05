@@ -5,7 +5,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/solid";
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-indigo-200 mb-8">
+    <nav className="bg-indigo-200 p-3">
       <div onClick={() => setOpen(!open)} className="w-8 h-9 md:hidden">
         {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
       </div>
