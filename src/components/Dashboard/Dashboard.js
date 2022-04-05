@@ -63,7 +63,7 @@ const Dashboard = () => {
         <h1 className="text-center text-sky-400 font-bold text-2xl">
           Sell in month
         </h1>
-        <ResponsiveContainer width={700} height="90%">
+        <ResponsiveContainer width={683} height="90%">
           <AreaChart
             width={630}
             height={250}
@@ -99,7 +99,7 @@ const Dashboard = () => {
         <h1 className="text-center text-sky-400 font-bold text-2xl">
           Investment vs Revenue
         </h1>
-        <ResponsiveContainer width={700} height="90%">
+        <ResponsiveContainer width={683} height="90%">
           <BarChart width={630} height={250} data={data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="month" />

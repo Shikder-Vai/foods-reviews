@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 
 const Header = () => {
@@ -10,22 +10,50 @@ const Header = () => {
         {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
       </div>
       <div
-        className={`text-2xl md:flex justify-center w-full bg-indigo-200 absolute md:static duration-500 ease-in ${
+        className={`text-2xl md:flex font-serif justify-center w-full bg-indigo-200 absolute md:static duration-500 ease-in ${
           open ? "top-10" : "top-[-130px]"
         }`}
       >
-        <Link className="mr-5 block " to={"/"}>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? " text-teal-500 font-bold mr-5"
+              : "mr-5 text-blue-900 font-semibold"
+          }
+          to={"/"}
+        >
           Home
-        </Link>
-        <Link className="mr-5 block " to={"/reviews"}>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? " text-teal-500 font-bold mr-5"
+              : "mr-5 text-blue-900 font-semibold"
+          }
+          to={"/reviews"}
+        >
           Reviews
-        </Link>
-        <Link className="mr-5 block " to={"/dashboard"}>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? " text-teal-500 font-bold mr-5"
+              : "mr-5 text-blue-900 font-semibold"
+          }
+          to={"/dashboard"}
+        >
           Dashboard
-        </Link>
-        <Link className="mr-5 block " to={"/about"}>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? " text-teal-500 font-bold mr-5"
+              : "mr-5 text-blue-900 font-semibold"
+          }
+          to={"/about"}
+        >
           About
-        </Link>
+        </NavLink>
       </div>
     </nav>
   );
