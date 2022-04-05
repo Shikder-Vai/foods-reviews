@@ -5,13 +5,13 @@ import { MenuIcon, XIcon } from "@heroicons/react/solid";
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-indigo-200 p-3">
+    <nav className="bg-indigo-200 p-2">
       <div onClick={() => setOpen(!open)} className="w-8 h-9 md:hidden">
         {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
       </div>
       <div
         className={`text-2xl md:flex justify-center w-full bg-indigo-200 absolute md:static duration-500 ease-in ${
-          open ? "top-6" : "top-[-130px]"
+          open ? "top-10" : "top-[-130px]"
         }`}
       >
         <Link className="mr-5 block " to={"/"}>
